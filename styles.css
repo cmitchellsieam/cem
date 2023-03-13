@@ -1,0 +1,94 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* styles.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  font-family: "Century Gothic", "Trebuchet MS", "Avenir Next", "Tahoma", "Fira Sans", sans-serif;
+  background-color: WhiteSmoke;
+  padding: 0;
+  margin: 0;
+
+  color: DimGray;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+   Site-specific styles
+   ========================================================================== */
+
+.credentials {
+  font-variant-caps: small-caps;
+}
+
+div.panel-title {
+  background-color: Silver;
+  color : WhiteSmoke ;
+  text-align: center;
+
+  border-bottom: 12px solid DimGray ;
+}
+
+h1.title{
+  font-size: 2.5em;
+  text-shadow: 2px 2px LightSlateGrey  ;
+  margin: 0;
+}
+
+h2.title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+img {
+  width: 60%;
+}
+
+.core {
+  display: flex;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
