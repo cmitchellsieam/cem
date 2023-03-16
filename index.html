@@ -7,7 +7,7 @@
         content = 'Professional profile of Craig Mitchell, with contact info'>
   <meta name = 'viewport'
         content = 'width=device-width, initial-scale=1'>
-  <title>About Craig Mitchell, Dude Extraordinaire</title>
+  <title>About Craig Mitchell</title>
   <link rel = 'stylesheet'
         href = 'styles.css'>
 </head>
@@ -15,46 +15,122 @@
 <body>
 
 <!--Title panel-->
-<div class = 'panel-title'>
-  <h1 class = 'title'>Craig E. Mitchell, <span class = 'credentials'>EAMP, PhD</span></h1>
-  <h2 class = 'title'>Chinese Herbal Medicine, Acupuncture, Tuina</h2>
-</div>
+<header id = 'masthead'>
+  <hgroup>
+    <h1 class = 'title'>Craig E. Mitchell, <span class = 'credentials'>EAMP, PhD</span></h1>
+    <h2 class = 'title'>Chinese Herbal Medicine, Acupuncture, Tuina</h2>
+  </hgroup>
+</header>
 
-<!--Main panel-->
-<div class = 'core'>
-  <div class = 'panel-main'>
-    <div class = 'main-content'
-         id = 'practice'>
-      <h3>Practice</h3>
-      <p>My practice involves the use of acupuncture, tui-na (Chinese medical massage), Chinese herbal medicine, lifestyle advice, and dietary recommendations. I work in a collaborative process with my patients and their other healthcare providers, when needed, to develop a treatment plan that
-         meets short and long-term health goals.</p>
-    </div>
+<!--start of main content-->
+<div class = 'main-flex'>
 
-    <div class = 'main-content'
-         id = 'academic'>
-      <h3>Academic</h3>
-      <p>I graduated from the American College of Traditional Chinese Medicine (SF, CA) in 1993. Since 1993, I have been seeing patients, teaching, and writing books, including On Cold Damage, a translation with commentary of the Shang Han Lun. Currently, I teach and serve as Academic Dean at the
-         Seattle Institute of East Asian Medicine.</p>
-    </div>
+  <section id = 'main'>
+    <h3>Practice</h3>
+    <p>My practice involves the use of acupuncture, tui-na (Chinese medical massage),
+       Chinese herbal medicine, lifestyle advice, and dietary recommendations.
+       I work in a collaborative process with my patients and their other healthcare providers,
+       when needed, to develop a treatment plan that meets short and long-term health goals.</p>
 
-    <img src = 'craig.jpg'
+    <h3>Academic</h3>
+    <p>I graduated from the American College of Traditional Chinese Medicine (SF, CA) in 1993. Since 1993,
+       I have been seeing patients, teaching, and writing books,
+       including <cite>On Cold Damage</cite>, a translation with commentary of the <cite>Shang Han Lun</cite>.
+       Currently, I teach and serve as Academic Dean at the Seattle Institute of East Asian Medicine.</p>
+
+    <img src = 'images/craig.jpg'
          alt = 'Portrait photograph of Craig Mitchell'>
-  </div>
+  </section>
 
-  <!--Contact panel-->
-  <div id = 'panel-contact'>
-    <div class = 'contact'>
+  <section id = 'panel-contact'>
+    <div id = 'card-emailphone'
+         class = 'card'>
       <h4>Contact</h4>
-      <p>To schedule an appointment or to reach me for any questions, feel free to call me at 206-517-4541 or email at cmitchell@sieam.edu.</p>
+      <p>To schedule an appointment or to reach me for any questions, feel free to call me at <a href = 'tel:+2065174541'>206‑517‑4541</a> or email at <a href = 'mailto:cmitchell@sieam.edu'>cmitchell@sieam.edu</a>.</p>
     </div>
 
-    <div class = 'contact'>
+    <div id = 'card-office'
+         class = 'card'>
       <h4>Office</h4>
-      <p>My office is located at the Seattle Institute of East Asian Medicine: 226 S. Orcas St. Seattle, WA 98108</p>
+      <p>My office is located at the Seattle Institute of East Asian Medicine: <a href = 'https://goo.gl/maps/L5AjKWrLHVsrYXLw8'>226 S Orcas St Seattle WA 98108</a></p>
     </div>
-  </div>
+  </section>
 
 </div>
+<!--end of main content-->
+
+<hr>
+
+<section id = 'panel-books'>
+  <div class = 'card-book'>
+    <a href = 'https://www.amazon.com/exec/obidos/ASIN/0912111577/'
+       class = 'iconic'>
+      <img src = 'images/on_cold_damage.jpg'
+           alt = 'Cover of the book titled: Shang Han Lun: On Cold Damage'>
+    </a>
+    <div class = 'book-description'>
+      <h4><cite>Shang Han Lun: On Cold Damage, Translation & Commentaries</cite></h4>
+      <p class = 'author'>by Zhongjing Zhang, Feng Ye, Nigel Wiseman, Craig Mitchell, Ye Feng</p>
+    </div>
+  </div>
+
+  <div class = 'card-book'>
+    <a href = 'https://www.amazon.com/exec/obidos/ASIN/0912111623/'
+       class = 'iconic'>
+      <img src = 'images/ten_medicinals.jpg'
+           alt = 'Cover of the book titled: Ten Lectures on the Use of Medicinals'>
+    </a>
+    <div class = 'book-description'>
+      <h4><cite>Ten Lectures on the Use of Medicinals from the Personal Experience of Jiao Shu-De (Jiao Clinical Chinese Medicine)</cite></h4>
+      <p class = 'author'>by Jiao Shu-De, Craig Mitchell</p>
+    </div>
+  </div>
+
+  <div class = 'card-book'>
+    <a href = 'https://www.amazon.com/exec/obidos/ASIN/0912111755/'
+       class = 'iconic'>
+      <img src = 'images/ten_formulas.jpg'
+           alt = 'Cover of the book titled: Ten Lectures On The Use Of Formulas'>
+    </a>
+    <div class = 'book-description'>
+      <h4><cite>Ten Lectures On The Use Of Formulas From The Personal Experience Of Jiao Shu-De</cite></h4>
+      <p class = 'author'>by Jiao Shu-Di</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id = 'panel-sellers'>
+  <div class = 'card-seller'>
+    <a href = 'https://www.redwingbooks.com/'
+       class = 'iconic'>
+      <img src = 'images/redwing.jpg'
+           alt = 'Company logo for bookseller named: Redwing Book Company'>
+    </a>
+    <div class = 'seller-description'>
+      <h4>Redwing Book Company</h4>
+      <p>My books are available through their website. </p>
+    </div>
+  </div>
+
+  <div class = 'card-seller'>
+    <a href = 'https://www.eastlandpress.com/'
+       class = 'iconic'>
+      <img src = 'images/eastland.jpg'
+           alt = 'Company logor for bookseller named: Eastland Press'>
+    </a>
+    <div class = 'seller-description'>
+      <h4>Eastland Press</h4>
+      <p>An excellent resource for books on Chinese medicine, as well as osteopathy</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <hr>
+  <p class = 'copyright'>Copyright © 2012-2023, Craig Mitchell. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
